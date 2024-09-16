@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/b1"
+    tools:context=".Add_infor"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="-16dp">
+
+    <TextView
+        android:id="@+id/Viewtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="บันทึกข้อมูลสินค้า"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/brandproductText"
+        android:layout_width="86dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="1dp"
+        android:inputType="text"
+        android:text="ชื่อแบรนด์ :"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/editbrand"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Viewtext" />
+
+    <EditText
+        android:id="@+id/editbrand"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="66dp"
+        android:background="@drawable/infor"
+        android:inputType="text"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/brandproductText"
+        app:layout_constraintTop_toBottomOf="@+id/Viewtext" />
+
+    <TextView
+        android:id="@+id/nameproductText"
+        android:layout_width="53dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="15dp"
+        android:inputType="text"
+        android:text="ชื่อรุ่น :"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toStartOf="@+id/editname"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/brandproductText" />
+
+    <EditText
+        android:id="@+id/editname"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="66dp"
+        android:background="@drawable/infor"
+        android:inputType="text"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/nameproductText"
+        app:layout_constraintTop_toBottomOf="@+id/editbrand" />
+
+    <TextView
+        android:id="@+id/serialnumberText"
+        android:layout_width="103dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="4dp"
+        android:inputType="text"
+        android:text="ซีเรียลนัมเบอร์ :"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toStartOf="@+id/editserial"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameproductText" />
+
+    <EditText
+        android:id="@+id/editserial"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="66dp"
+        android:background="@drawable/infor"
+        android:inputType="text"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/serialnumberText"
+        app:layout_constraintTop_toBottomOf="@+id/editname" />
+
+    <TextView
+        android:id="@+id/amountText"
+        android:layout_width="103dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="4dp"
+        android:inputType="text"
+        android:text="จำนวนคงเหลือ :"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toStartOf="@+id/editamount"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editserial" />
+
+    <EditText
+        android:id="@+id/editamount"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="14dp"
+        android:background="@drawable/infor"
+        android:inputType="text"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/amonText"
+        app:layout_constraintStart_toEndOf="@+id/amountText"
+        app:layout_constraintTop_toBottomOf="@+id/editserial" />
+
+    <TextView
+        android:id="@+id/amonText"
+        android:layout_width="46dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="66dp"
+        android:inputType="text"
+        android:text="เครื่อง"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editamount"
+        app:layout_constraintTop_toBottomOf="@+id/editserial" />
+
+    <TextView
+        android:id="@+id/priceText"
+        android:layout_width="46dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="17dp"
+        android:inputType="text"
+        android:text="ราคา :"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toStartOf="@+id/editprice"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/amountText" />
+
+    <EditText
+        android:id="@+id/editprice"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="7dp"
+        android:background="@drawable/infor"
+        android:inputType="text"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/bathText"
+        app:layout_constraintStart_toEndOf="@+id/priceText"
+        app:layout_constraintTop_toBottomOf="@+id/amountText" />
+
+    <TextView
+        android:id="@+id/bathText"
+        android:layout_width="46dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="133dp"
+        android:inputType="text"
+        android:text="บาท"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editprice"
+        app:layout_constraintTop_toBottomOf="@+id/editamount" />
+
+    <TextView
+        android:id="@+id/cpuText"
+        android:layout_width="91dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:inputType="text"
+        android:text="ความเร็วซีพียู :"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toStartOf="@+id/ramText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/priceText" />
+
+    <EditText
+        android:id="@+id/editcpu"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/infor"
+        android:inputType="text"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/editram"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cpuText" />
+
+    <TextView
+        android:id="@+id/ramText"
+        android:layout_width="139dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="66dp"
+        android:inputType="text"
+        android:text="ความจุหน่วยความจำ :"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cpuText"
+        app:layout_constraintTop_toBottomOf="@+id/editprice" />
+
+    <EditText
+        android:id="@+id/editram"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="66dp"
+        android:background="@drawable/infor"
+        android:inputType="text"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editcpu"
+        app:layout_constraintTop_toBottomOf="@+id/ramText" />
+
+    <TextView
+        android:id="@+id/romText"
+        android:layout_width="139dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="1dp"
+        android:inputType="text"
+        android:text="ความจุฮาร์ดดิสก์ :"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toStartOf="@+id/editrom"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editcpu" />
+
+    <EditText
+        android:id="@+id/editrom"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="133dp"
+        android:background="@drawable/infor"
+        android:inputType="text"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/romText"
+        app:layout_constraintTop_toBottomOf="@+id/editram" />
+
+    <TextView
+        android:id="@+id/imageText"
+        android:layout_width="111dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="28dp"
+        android:inputType="text"
+        android:text="รูปคอมพิวเตอร์ :"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/romText" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="63dp"
+        android:background="@drawable/infor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imagebutton"
+        app:layout_constraintTop_toBottomOf="@+id/editrom"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <Button
+        android:id="@+id/imagebutton"
+        android:layout_width="95dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="81dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="22dp"
+        android:backgroundTint="#87CEFA"
+        android:text="เพิ่มรูปภาพ"
+        android:textColor="#000033"
+        android:textSize="11sp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageText" />
+
+    <Button
+        android:id="@+id/nextbutton"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="68dp"
+        android:backgroundTint="#66FFCC"
+        android:text="บันทึกข้อมูล"
+        android:textColor="#000033"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.776"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/backbutton"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="73dp"
+        android:layout_marginBottom="68dp"
+        android:backgroundTint="#FF0066"
+        android:text="กลับ"
+        android:textColor="#000033"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.202"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rom" />
+</androidx.constraintlayout.widget.ConstraintLayout>
